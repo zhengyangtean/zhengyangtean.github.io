@@ -16,6 +16,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<!--AngularJS-->
 	<script type="text/javascript" src="resource/javascript/angular.min.js"></script>
+	<script type="text/javascript" src="resource/javascript/angular-route.min.js"></script>
 	<script type="text/javascript" src="resource/javascript/app.js"></script>
 	<script type="text/javascript" src="resource/javascript/controller.js"></script>
 </head>
@@ -38,14 +39,14 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">About me<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">About me<span class="sr-only">(current)</span></a></li>
 						<li><a href="#">Contact me</a></li>
 					</ul>	
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Others<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li> Work in Progress </li>
+								<li><a href="#/life-in-sf"> Life in SF </a></li>
 							</ul>
 						</li>
 					</ul>
@@ -53,9 +54,10 @@
 			</div><!-- /.container-fluid -->
 		</nav>
 	</div>
-	<div >
-		<script id="pixlee_script" src="//assets.pixlee.com/assets/pixlee_widget_v3.js"></script><script>var pixlee = new PixleeWidget("https://photos.pixlee.com/zy/123642/v2?horizontal=true&filter_sort_id=12152","pixlee_container", "https://photos.pixlee.com/", document.location.hash);pixlee.setupWidget(true);</script>
-	</div>
+	<div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
+
 </body>
 
 </html>

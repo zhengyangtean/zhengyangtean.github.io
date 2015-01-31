@@ -8,3 +8,8 @@ webAppControllers.controller('homeCtrl', ['$scope', function($scope){
 	$scope.test = 'lallalallalalal';
 
 }]);
+
+webAppControllers.controller('lifeInSFCtrl', ['$scope', function($scope){
+	$scope.test = 'lallalallalalal';
+
+}]);
